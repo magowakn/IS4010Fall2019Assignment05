@@ -26,6 +26,16 @@ public class FootballFun {
 		}
 	}
 	public static String translateScore (int score) {
-		return "";
+		if (score ==2) return ("safety"); // Reference comparison to the previous part of equals to safety
+		else if (score == 3) return ("field goal"); // If the previous statement is not true then this will be the next statement to hold true
+		else if (score == 6) return ("touchdown"); // // If that statement doesn't hold true, it will output 'touchdown'
+		else if (score == 7) return ("touchdown and extra point"); // Another else statement that will hold true if score == 7
+		else if (score == 8) return ("touchdown and 2-point conversion"); // Output will be touchdown and 2-point conversion if score matches up with 8
+		else if (score == -1) return (""); // Return will be empty if score == -1
+		else if (score == 1) return ("invalid"); // 'Invalid' will be the output if score equals 1
+		else if (score == 10) return ("you must be playing Quidditch "); // It will output this return if the score is the same as the previous equals statement of 10
+		
+		return ""; // this will return 'All tests passed' if all of the conditions hold true to their form
+		
 	}
 }
